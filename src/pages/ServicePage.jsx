@@ -1,3 +1,5 @@
+import createTaskImg from "../assets/create-task2.avif";
+import ShowStatusImg from "../assets/show-status.avif";
 import { useState } from "react";
 import CreateTask from "./CreateTask";
 import ShowStatus from "./ShowStatus";
@@ -15,7 +17,7 @@ function ActionCard({ title, image, onClick }) {
       <img
         src={image}
         alt={title}
-        className="w-36 h-36 object-contain mt-5 opacity-80 group-hover:opacity-100 transition"
+        className="w-44 h-44 object-contain mt-5 opacity-80 group-hover:opacity-100 transition group-hover:scale-105 transition"
       />
     </div>
   );
@@ -53,13 +55,13 @@ function ServicePage({ type, onBack }) {
 
         <ActionCard
           title="Create Task"
-          image="https://cdn-icons-png.flaticon.com/512/1828/1828817.png"
+          image={createTaskImg}
           onClick={() => setPage("create")}
         />
 
         <ActionCard
           title="Show Status"
-          image="https://cdn-icons-png.flaticon.com/512/190/190411.png"
+          image={ShowStatusImg}
           onClick={() => setPage("status")}
         />
 

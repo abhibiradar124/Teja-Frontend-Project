@@ -3,19 +3,19 @@ import logo from "../assets/teja-logo.jpeg";
 
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="soft-bg min-h-screen relative">
+    <div className="soft-bg min-h-screen">
 
-      {/* Top-left logo */}
-      <div className="absolute top-6 left-8">
+      {/* TOP BAR */}
+      <div className="fixed top-0 left-0 w-full h-16 bg-white/80 backdrop-blur border-b border-gray-200 flex items-center px-8 z-50">
         <img
           src={logo}
           alt="Teja Logo"
-          className="w-28 object-contain teja-animate"
+          className="h-14 object-contain teja-animate"
         />
       </div>
 
-      {/* Main centered content */}
-      <div className="min-h-screen flex items-center justify-center">
+      {/* PAGE CONTENT */}
+      <div className="pt-16 min-h-screen flex items-center justify-center">
         {children}
       </div>
 

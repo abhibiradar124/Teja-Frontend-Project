@@ -24,12 +24,12 @@ const Home = ({ onSelectService }) => {
     <div className="w-full h-full flex flex-col">
 
       <div className="text-center pt-10 pb-4">
-        <h1 className="text-4xl font-semibold tracking-wide">
+        <h1 className="text-4xl font-semibold tracking-wide mb-6">
           Admin Dashboard
         </h1>
       </div>
 
-      <div className="flex-1 flex items-center justify-center pt-10">
+      <div className="flex-1 flex items-start justify-center pt-10">
        <div className="w-full max-w-5xl grid grid-cols-3 page-enter">
 
           <div className="flex justify-start">

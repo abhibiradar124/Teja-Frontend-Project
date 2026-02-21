@@ -1,4 +1,7 @@
 import React from "react";
+import translationImg from "../assets/translation.avif";
+import transcriptionImg from "../assets/transcription.jpeg";
+import voiceOverImg from "../assets/voice-over.jpeg";
 
 const ServiceCard = ({ title, image, onClick }) => {
   return (
@@ -13,7 +16,7 @@ const ServiceCard = ({ title, image, onClick }) => {
       <img
         src={image}
         alt={title}
-        className="w-40 h-40 object-contain mt-6 opacity-80 group-hover:opacity-100 transition"
+        className="w-70 h-44 object-contain mt-6 opacity-80 group-hover:opacity-100 transition"
       />
     </div>
   );
@@ -23,19 +26,19 @@ const Home = ({ onSelectService }) => {
   return (
     <div className="w-full h-full flex flex-col">
 
-      <div className="text-center pt-10 pb-4">
+      <div className="text-center pt-0 pb-4">
         <h1 className="text-4xl font-semibold tracking-wide mb-6">
           Admin Dashboard
         </h1>
       </div>
 
-      <div className="flex-1 flex items-start justify-center pt-10">
-       <div className="w-full max-w-5xl grid grid-cols-3 page-enter">
+      <div className="flex-1 flex flex-col items-center pt-6">
+       <div className="w-full max-w-5xl grid grid-cols-3 gap-8 mt-6 page-enter">
 
           <div className="flex justify-start">
             <ServiceCard
               title="Translation"
-              image="https://cdn-icons-png.flaticon.com/512/3898/3898082.png"
+              image={translationImg}
               onClick={() => onSelectService("Translation")}
             />
           </div>
@@ -43,7 +46,7 @@ const Home = ({ onSelectService }) => {
           <div className="flex justify-center">
             <ServiceCard
               title="Transcription"
-              image="https://cdn-icons-png.flaticon.com/512/3209/3209265.png"
+              image={transcriptionImg}
               onClick={() => onSelectService("Transcription")}
             />
           </div>
@@ -51,7 +54,7 @@ const Home = ({ onSelectService }) => {
           <div className="flex justify-end">
             <ServiceCard
               title="Voice Over"
-              image="https://cdn-icons-png.flaticon.com/512/727/727245.png"
+              image={voiceOverImg}
               onClick={() => onSelectService("Voice Over")}
             />
           </div>

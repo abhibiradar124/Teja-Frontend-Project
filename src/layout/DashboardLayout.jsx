@@ -10,7 +10,7 @@ const DashboardLayout = ({ children }) => {
         <img
           src={logo}
           alt="Teja Logo"
-          className="h-14 object-contain teja-animate"
+          className="h-14 w=20 object-contain teja-animate"
         />
       </div>
 

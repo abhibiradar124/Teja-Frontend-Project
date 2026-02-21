@@ -1,14 +1,14 @@
 function CreateTask({ type, onBack }) {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black/10">
+    <div className="fixed inset-0 flex items-start justify-center pt-24 bg-black/10 z-50">
 
       {/* Modal Box */}
-      <div className="bg-white w-full max-w-lg p-8 rounded-xl shadow-lg relative">
+      <div className="bg-white/90 w-full max-w-2xl p-8 rounded-xl shadow-lg relative border border-black-30 max-h-[80vh] overflow-y-auto scrollbar-hide">
 
         {/* Back button TOP RIGHT */}
         <button
           onClick={onBack}
-          className="absolute top-4 right-4 px-3 py-1 border rounded"
+          className="absolute top-4 right-4 px-3 py-1 border rounded hover:bg-black hover:text-white transition"
         >
           Back
         </button>
@@ -78,7 +78,7 @@ function CreateTask({ type, onBack }) {
 
           {/* Save */}
           <button className="w-full border py-3 rounded mt-4">
-            Save Task
+            Create Task
           </button>
 
         </div>

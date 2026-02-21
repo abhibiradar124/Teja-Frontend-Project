@@ -48,7 +48,7 @@ function ShowStatus({ type, onBack }) {
             <label className="block mb-2">Task Status</label>
 
             <div className="flex gap-4">
-              <StatusBadge status="Design" />
+              <StatusBadge status="status sign" />
               <StatusBadge status="Done" />
             </div>
 
